@@ -1,4 +1,4 @@
-# cms-shopping-cart
+# CMS & Shopping Cart
 
 ## Project setup
 ```
