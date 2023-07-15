@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "json": "json-server data.js -p 3500"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "vee-validate": "^4.10.6",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -32,7 +34,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off"
+    }
   },
   "browserslist": [
     "> 1%",
