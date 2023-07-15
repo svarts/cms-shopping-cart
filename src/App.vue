@@ -1,16 +1,22 @@
 <template>
-  <div class="container">
+  <div class="">
     <MainHeader />
   </div>
 </template>
 
 <script>
-import MainHeader from './components/MainHeader.vue'
+import { mapActions } from "vuex";
+import MainHeader from './components/MainHeader.vue';
 
 export default {
   components: {
     MainHeader
+  },
+  methods: {
+    ...mapActions(["setPagesAction"])
+  },
+  async created() {
+    this.setPagesAction();
   }
-}
+};
 </script>
-
