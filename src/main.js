@@ -1,7 +1,13 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-//import store from './store';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+import Vue from "vue";
+import App from "./App.vue";
 
-createApp(App).mount('#app');
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+
+import store from "./store";
+
+
+new Vue({
+    render: (h) => h(App),
+    store,
+}).$mount("#app");

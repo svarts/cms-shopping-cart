@@ -5,8 +5,8 @@ import Axios from "axios";
 
 Vue.use(Vuex);
 
-const baseUrl = 'http://localhost:8080/';
-const pagesUrl = `${baseUrl}`
+const baseUrl = 'http://localhost:3500';
+const pagesUrl = `${baseUrl}/pages`
 
 export default new Vuex.Store({
 
